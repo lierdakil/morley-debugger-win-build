@@ -24,7 +24,7 @@ jobs:
     steps:
       - run: |
           git clone https://gitlab.com/morley-framework/morley-debugger.git .
-          git checkout 7624c0426d50daa7da5d36fdc07a37b58a72e785
+          git checkout 9c50126570b3757c39eaf14993bd4ea17a819cc8
 
       # Runs a set of commands using the runners shell
       - run: stack install --local-bin-path .
