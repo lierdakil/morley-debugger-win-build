@@ -27,6 +27,8 @@ jobs:
           git checkout 9c50126570b3757c39eaf14993bd4ea17a819cc8
 
       # Runs a set of commands using the runners shell
+      - run: stack setup
+      - run: stack exec -- pacman -S mingw-w64-x86_64-pkg-config
       - run: stack install --local-bin-path .
       
       - uses: actions/upload-artifact@v3
