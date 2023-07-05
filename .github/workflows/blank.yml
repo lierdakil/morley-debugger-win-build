@@ -24,7 +24,7 @@ jobs:
     steps:
       - run: |
           git clone https://gitlab.com/morley-framework/morley-debugger.git .
-          git checkout 4fbf1a9f6904d59fa5bf34504c7c7e00d6587963
+          git checkout 02300c16f70de25da33d638ab0817913c9c86b94
 
       - uses: haskell/actions/setup@v2
         with:
