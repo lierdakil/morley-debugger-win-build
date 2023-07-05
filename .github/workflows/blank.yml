@@ -28,7 +28,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - run: stack setup
-      - run: stack exec -- pacman -Sy mingw-w64-x86_64-pkg-config
+      - run: stack exec -- pacman --noconfirm -S mingw-w64-x86_64-pkg-config
       - run: stack install --local-bin-path .
       
       - uses: actions/upload-artifact@v3
